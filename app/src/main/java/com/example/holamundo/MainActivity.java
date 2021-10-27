@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToActivityProducto(View view) {
         Intent newIntent = new Intent(this, ProductoActivity.class);
-        newIntent.putExtra("msg", "Hola");
+        newIntent.putExtra("msg", "Hola MinTIC");
         newIntent.putExtra("year", 2021);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(newIntent);
