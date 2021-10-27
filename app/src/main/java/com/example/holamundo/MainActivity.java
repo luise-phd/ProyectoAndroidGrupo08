@@ -28,27 +28,27 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "Método onStart()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onStart()", Toast.LENGTH_LONG).show();
     }
 
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "Método onResume()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onResume()", Toast.LENGTH_LONG).show();
     }
 
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "Método onPause()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onPause()", Toast.LENGTH_LONG).show();
     }
 
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "Método onStop()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onStop()", Toast.LENGTH_LONG).show();
     }
 
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(this, "Método onRestart()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onRestart()", Toast.LENGTH_LONG).show();
     }
 
     protected void onDestroy() {
