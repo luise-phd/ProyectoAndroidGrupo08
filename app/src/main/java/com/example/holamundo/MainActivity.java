@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -24,6 +26,31 @@ public class MainActivity extends AppCompatActivity {
         newIntent.putExtra("year", 2021);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(newIntent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+
+        if(id == R.id.mnu_producto) {
+            Intent newIntent = new Intent(this, ProductoActivity.class);
+            newIntent.putExtra("msg", "Hola MinTIC");
+            newIntent.putExtra("year", 2021);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_categoria) {
+            Intent newIntent = new Intent(this, CategoriaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+
+        return super.onOptionsItemSelected(menuItem);
     }
 
     protected void onStart() {

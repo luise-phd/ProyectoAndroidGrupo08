@@ -14,6 +14,7 @@ public class ProductoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_producto);
+        //Activar soporte para la ActionBar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getParametros();
     }
