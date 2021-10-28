@@ -1,4 +1,4 @@
-package com.example.holamundo;
+package com.ingluise.ProyectoAndroidGrupo08;
 
 import org.junit.Test;
 
