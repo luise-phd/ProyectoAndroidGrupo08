@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
-            android:name="com.ingluise.ProyectoAndroidGrupo08.CategoriaActivity"
-            android:label="@string/categoria"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.ingluise.ProyectoAndroidGrupo08.ProductoActivity"
+            android:name=".CategoriaActivity"
+            android:exported="false"
+            android:label="@string/categoria" />
+        <activity
+            android:name=".ProductoActivity"
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name="com.ingluise.ProyectoAndroidGrupo08.MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
