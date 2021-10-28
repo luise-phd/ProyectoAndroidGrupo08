@@ -26,11 +26,11 @@ public class SplashScreen extends AppCompatActivity {
         //Ocultar ActionBar
         getSupportActionBar().hide();
 
-        // Crear una tarea de temporización
+        //Crear una tarea de temporización
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                Intent newIntent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent newIntent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(newIntent);
                 finish();
             }
