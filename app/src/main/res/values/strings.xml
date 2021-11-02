@@ -3,4 +3,10 @@
     <string name="categoria">Categoría</string>
     <string name="previous">Previous</string>
     <string name="producto">Producto</string>
+
+    <string-array name="lista_cargo">
+        <item>Vigilante</item>
+        <item>Servicios generales</item>
+        <item>Gerente</item>
+    </string-array>
 </resources>
