@@ -10,4 +10,7 @@
     <item
         android:id="@+id/mnu_categoria"
         android:title="@string/categoria" />
+    <item
+        android:id="@+id/mnu_marca"
+        android:title="Marca" />
 </menu>

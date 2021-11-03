@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CategoriaActivity">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CategoriaActivity">
+
+        <TextView
+            android:id="@+id/piece1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@color/blue1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/block2"
+            android:layout_width="180dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/blue2"
+            app:layout_constraintBottom_toBottomOf="@+id/piece1"
+            app:layout_constraintStart_toEndOf="@+id/piece1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/block3"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/blue3"
+            app:layout_constraintBottom_toBottomOf="@+id/piece1"
+            app:layout_constraintStart_toEndOf="@+id/block2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/block4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/orange1"
+            app:layout_constraintStart_toEndOf="@+id/block3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/block5"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/orange2"
+            app:layout_constraintBottom_toBottomOf="@+id/block3"
+            app:layout_constraintStart_toEndOf="@+id/block3"
+            app:layout_constraintTop_toBottomOf="@+id/block4" />
+
+        <TextView
+            android:id="@+id/block6"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/orange3"
+            app:layout_constraintBottom_toBottomOf="@+id/block4"
+            app:layout_constraintStart_toEndOf="@+id/block4"
+            app:layout_constraintTop_toTopOf="@+id/block4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/block7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/orange4"
+            app:layout_constraintBottom_toBottomOf="@+id/block5"
+            app:layout_constraintEnd_toEndOf="@+id/block8"
+            app:layout_constraintStart_toStartOf="@+id/block6"
+            app:layout_constraintTop_toTopOf="@+id/block5" />
+
+        <TextView
+            android:id="@+id/block8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blue3"
+            app:layout_constraintBottom_toTopOf="@+id/block7"
+            app:layout_constraintStart_toEndOf="@+id/block6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>

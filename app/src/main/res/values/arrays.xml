@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="lista_estado_civil">
-        <item>Soltero</item>
-        <item>Casado</item>
-        <item>Divorciado</item>
-        <item>Viudo</item>
+    <string-array name="lista_categoria">
+        <item>Bebidas</item>
+        <item>Granos</item>
+        <item>Enlatados</item>
+        <item>Galletería</item>
+    </string-array>
+
+    <string-array name="lista_marca">
+        <item>XYZ</item>
+        <item>Super bebidas</item>
+        <item>Productos de mi tierra</item>
+    </string-array>
+
+    <string-array name="lista_proveedores">
+        <item>Juan Zanabria</item>
+        <item>Ana Manría Ruíz</item>
+        <item>Gentil Duarte Rodríguez</item>
+        <item>María Fernanda Enriquez</item>
     </string-array>
 </resources>

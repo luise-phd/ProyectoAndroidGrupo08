@@ -27,10 +27,10 @@ public class ProductoActivity extends AppCompatActivity {
     }
 
     public void getParametros() {
-        Bundle extras = getIntent().getExtras();
-        String msg = extras.getString("msg");
-        Integer year = extras.getInt("year");
-        Toast.makeText(this, msg + " " + year, Toast.LENGTH_SHORT).show();
+//        Bundle extras = getIntent().getExtras();
+//        String msg = extras.getString("msg");
+//        Integer year = extras.getInt("year");
+//        Toast.makeText(this, msg + " " + year, Toast.LENGTH_SHORT).show();
     }
 
     public void OnBackPressed() {

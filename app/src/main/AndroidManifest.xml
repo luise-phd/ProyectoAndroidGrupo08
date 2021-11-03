@@ -16,6 +16,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".MarcaActivity"
+            android:exported="false"
+            android:label="@string/marca"/>
+        <activity
             android:name=".CategoriaActivity"
             android:exported="false"
             android:label="@string/categoria" />

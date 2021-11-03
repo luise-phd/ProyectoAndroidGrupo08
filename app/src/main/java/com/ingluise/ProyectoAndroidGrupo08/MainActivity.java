@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "Método onCreate()", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Método onCreate()", Toast.LENGTH_LONG).show();
         Log.i("Información", "Esto es una Prueba");
     }
 
     public void goToActivityProducto(View view) {
         Intent newIntent = new Intent(this, ProductoActivity.class);
-        newIntent.putExtra("msg", "Hola MinTIC");
-        newIntent.putExtra("year", 2021);
+//        newIntent.putExtra("msg", "Hola MinTIC");
+//        newIntent.putExtra("year", 2021);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(newIntent);
     }
@@ -49,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id == R.id.mnu_categoria) {
             Intent newIntent = new Intent(this, CategoriaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_marca) {
+            Intent newIntent = new Intent(this, MarcaActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
