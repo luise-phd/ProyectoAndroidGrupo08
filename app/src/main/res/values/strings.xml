@@ -4,4 +4,6 @@
     <string name="previous">Previous</string>
     <string name="producto">Producto</string>
     <string name="marca">Marca</string>
+    <string name="saludo">Hello World!</string>
+    <string name="saludo2">Bienvenido</string>
 </resources>
