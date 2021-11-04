@@ -19,4 +19,11 @@
         <item>Gentil Duarte Rodríguez</item>
         <item>María Fernanda Enriquez</item>
     </string-array>
+
+    <string-array name="nivel_ingles">
+        <item>Seleccione...</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>No tan bueno</item>
+    </string-array>
 </resources>

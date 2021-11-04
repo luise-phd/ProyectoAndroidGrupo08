@@ -67,10 +67,20 @@
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#8F5555"
+                    android:drawableLeft="@android:drawable/checkbox_on_background"
                     android:onClick="iniciarSesion"
-                    android:text="Iniciar sesión"
+                    android:text="Button"
                     android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:onClick="iniciarSesion"
+                    app:srcCompat="@drawable/ic_user" />
 
                 <TextView
                     android:id="@+id/textView3"

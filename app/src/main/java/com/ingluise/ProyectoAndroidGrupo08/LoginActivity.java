@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         et2 = (EditText) findViewById(R.id.editTextTextPassword);
         iv1 = (ImageView) findViewById(R.id.imageView);
         b1 = (Button) findViewById(R.id.button7);
+        b1.setText(R.string.iniciar_sesion);
         t1.setText("Proyecto\nGrupo 08");
         t1.setTextSize(20);
 //        String link = "<a href='https://imaster.academy/course/view.php?id=1001&section=3'>iMaster</a>";

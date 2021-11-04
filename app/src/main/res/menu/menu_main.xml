@@ -8,9 +8,9 @@
         android:title="@string/producto"
         app:showAsAction="always" />
     <item
-        android:id="@+id/mnu_categoria"
-        android:title="@string/categoria" />
+        android:id="@+id/mnu_horizontal_scrollview"
+        android:title="@string/horizontal_scrollview" />
     <item
-        android:id="@+id/mnu_marca"
-        android:title="Marca" />
+        android:id="@+id/mnu_scrollview"
+        android:title="@string/scrollview" />
 </menu>

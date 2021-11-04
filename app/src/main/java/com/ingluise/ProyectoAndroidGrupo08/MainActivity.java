@@ -11,7 +11,6 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_categoria) {
-            Intent newIntent = new Intent(this, CategoriaActivity.class);
+        else if(id == R.id.mnu_horizontal_scrollview) {
+            Intent newIntent = new Intent(this, HorizontalScrollViewActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_marca) {
-            Intent newIntent = new Intent(this, MarcaActivity.class);
+        else if(id == R.id.mnu_scrollview) {
+            Intent newIntent = new Intent(this, ScrollViewActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }

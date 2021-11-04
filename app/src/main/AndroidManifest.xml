@@ -10,25 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MarcaActivity"
+            android:name=".ScrollViewActivity"
             android:exported="false"
-            android:label="@string/marca"/>
+            android:label="@string/scrollview" />
         <activity
-            android:name=".CategoriaActivity"
+            android:name=".HorizontalScrollViewActivity"
             android:exported="false"
-            android:label="@string/categoria" />
+            android:label="@string/horizontal_scrollview" />
         <activity
             android:name=".ProductoActivity"
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".EncuestaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
