@@ -26,4 +26,6 @@
         <item>Regular</item>
         <item>No tan bueno</item>
     </string-array>
+
+    <string-array name="preloaded_fonts"></string-array>
 </resources>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <dimen name="fab_margin">16dp</dimen>
-    </resources>
+    <dimen name="texto_24sp">24sp</dimen>
+</resources>

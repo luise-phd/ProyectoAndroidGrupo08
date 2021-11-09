@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mi_estilo">
+        <item name="fontFamily">@font/fruktur_regular</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/orange1</item>
+        <item name="fontStyle">italic</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>
