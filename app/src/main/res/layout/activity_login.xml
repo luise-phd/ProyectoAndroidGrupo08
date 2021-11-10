@@ -91,6 +91,14 @@
                     android:textAlignment="center"
                     android:textColor="@color/design_default_color_primary"
                     android:textColorLink="#673AB7" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="TextView"
+                    android:textAlignment="center" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

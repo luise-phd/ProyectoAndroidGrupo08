@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
-            android:name=".EncuestaActivity"
+            android:name=".ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".EncuestaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -34,7 +34,7 @@
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".ListViewActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

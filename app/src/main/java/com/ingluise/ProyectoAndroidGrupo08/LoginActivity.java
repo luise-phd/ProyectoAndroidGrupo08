@@ -2,10 +2,14 @@ package com.ingluise.ProyectoAndroidGrupo08;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,10 +18,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    TextView t1, t2;
-    EditText et1, et2;
-    ImageView iv1;
-    Button b1;
+    private TextView t1, t2, t3;
+    private EditText et1, et2;
+    private ImageView iv1;
+    private Button b1;
+
+    private SharedPreferences settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +32,11 @@ public class LoginActivity extends AppCompatActivity {
         //Ocultar ActionBar
         getSupportActionBar().hide();
 
+        settings = getSharedPreferences("id", Context.MODE_PRIVATE);
+
         t1 = (TextView) findViewById(R.id.textView);
         t2 = (TextView) findViewById(R.id.textView3);
+        t3 = findViewById(R.id.textView15);
         et1 = (EditText) findViewById(R.id.editTextTextPersonName);
         et2 = (EditText) findViewById(R.id.editTextTextPassword);
         iv1 = (ImageView) findViewById(R.id.imageView);
@@ -42,17 +51,40 @@ public class LoginActivity extends AppCompatActivity {
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(et1.getText().toString().equals("admin")) {
+                if(et1.getText().toString().equals(settings.getString("user", ""))) {
                     Toast.makeText(LoginActivity.this,
-                            "Su contraseña es: admin",
+                            "Su contraseña es: " + settings.getString("pass", ""),
                             Toast.LENGTH_SHORT).show();
                 }
+                else {
+                    Toast.makeText(LoginActivity.this,
+                            "El usuario no existe", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        t3.setTextColor(Color.BLUE);
+        t3.setText(Html.fromHtml("Registrarse"));
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putString("user", et1.getText().toString());
+                editor.putString("pass", et2.getText().toString());
+                editor.commit();
+
+                et1.setText("");
+                et2.setText("");
             }
         });
     }
 
     public void iniciarSesion(View view) {
-        if(et1.getText().toString().equals("admin") && et2.getText().toString().equals("admin")) {
+        String usuario = et1.getText().toString();
+        String clave = et2.getText().toString();
+        if(usuario.equals(settings.getString("user", "")) &&
+                clave.equals(settings.getString("pass", "")) &&
+                !usuario.equals("") && !clave.equals("")) {
+//        if(et1.getText().toString().equals("admin") && et2.getText().toString().equals("admin")) {
             Intent newIntent = new Intent(this, MainActivity.class);
             startActivity(newIntent);
             finish();
