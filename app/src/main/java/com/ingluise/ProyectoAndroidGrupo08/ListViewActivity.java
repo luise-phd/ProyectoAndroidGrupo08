@@ -1,5 +1,6 @@
 package com.ingluise.ProyectoAndroidGrupo08;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
@@ -62,7 +63,21 @@ public class ListViewActivity extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
-                Toast.makeText(getApplicationContext(), "Pos: "+pos+" - "+lv.getItemAtPosition(pos), Toast.LENGTH_SHORT).show();
+                db = admin.getReadableDatabase();
+                filas = db.rawQuery("SELECT * FROM producto", null);
+                String info = "";
+                while (filas.moveToNext()) {
+                    if (lv.getItemAtPosition(pos).equals(filas.getInt(0) + "-" + filas.getString(1) + "\n" + filas.getString(2)))
+                    info = filas.getInt(0) + "\n" + "Nombre: " + filas.getString(1) + "\n" + "Descripción: " + filas.getString(2) +
+                            "\n" + "Categoría: " + filas.getString(3) +"\n" + "Marca: " + filas.getString(4) + "\n" + "Proveedor: " +filas.getString(5);
+                }
+                db.close();
+//                Toast.makeText(getApplicationContext(), info, Toast.LENGTH_SHORT).show();
+                new AlertDialog.Builder(ListViewActivity.this, R.style.Theme_AppCompat_Dialog_Alert)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Datos")
+                    .setMessage(info)
+                    .setPositiveButton("Aceptar", null).show();
             }
         });
     }

@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/texto_categoria"
             android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/marca"
+            android:layout_toLeftOf="@+id/spinner_marca"
             android:entries="@array/lista_categoria" />
 
         <TextView
@@ -81,7 +81,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Spinner
-            android:id="@+id/marca"
+            android:id="@+id/spinner_marca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/texto_marca"

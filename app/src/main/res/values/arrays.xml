@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="lista_categoria">
+        <item>Seleccione...</item>
         <item>Bebidas</item>
         <item>Granos</item>
         <item>Enlatados</item>
@@ -8,12 +9,14 @@
     </string-array>
 
     <string-array name="lista_marca">
+        <item>Seleccione...</item>
         <item>XYZ</item>
         <item>Super bebidas</item>
         <item>Productos de mi tierra</item>
     </string-array>
 
     <string-array name="lista_proveedores">
+        <item>Seleccione...</item>
         <item>Juan Zanabria</item>
         <item>Ana Manría Ruíz</item>
         <item>Gentil Duarte Rodríguez</item>
