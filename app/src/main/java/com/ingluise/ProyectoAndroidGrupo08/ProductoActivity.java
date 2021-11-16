@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Adapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -60,6 +61,7 @@ public class ProductoActivity extends AppCompatActivity {
             if (reg != -1) {
                 Toast.makeText(this, "Registro almacenado", Toast.LENGTH_SHORT).show();
                 et1.setText("");
+                et1.requestFocus();
                 et2.setText("");
                 sp1.setSelection(0);
                 sp2.setSelection(0);
@@ -120,21 +122,39 @@ public class ProductoActivity extends AppCompatActivity {
             Toast.makeText(this, "Registro editado", Toast.LENGTH_SHORT).show();
             et1.setText("");
             et2.setText("");
+            sp1.setSelection(0);
+            sp2.setSelection(0);
+            sp3.setSelection(0);
         }
     }
 
     public void buscarDatos(View view) {
         String nom = et1.getText().toString();
-        String cat = sp1.getSelectedItem().toString();
-        String mar = sp2.getSelectedItem().toString();
-        String pro = sp3.getSelectedItem().toString();
 
         if(!nom.equals("")) {
             db = admin.getReadableDatabase();
             filas = db.rawQuery("SELECT * FROM producto WHERE nombre='" + nom + "'", null);
             if (filas.moveToFirst()) {
                 et2.setText(filas.getString(2));
-
+                Adapter adapter = sp1.getAdapter();
+                for (int i=0; i<adapter.getCount(); i++) {
+                    if(filas.getString(3).equals(adapter.getItem(i))) {
+//                        Toast.makeText(this, ""+adapter.getItem(i), Toast.LENGTH_SHORT).show();
+                        sp1.setSelection(i);
+                    }
+                }
+                adapter = sp2.getAdapter();
+                for (int i=0; i<adapter.getCount(); i++) {
+                    if(filas.getString(4).equals(adapter.getItem(i))) {
+                        sp2.setSelection(i);
+                    }
+                }
+                adapter = sp3.getAdapter();
+                for (int i=0; i<adapter.getCount(); i++) {
+                    if(filas.getString(5).equals(adapter.getItem(i))) {
+                        sp3.setSelection(i);
+                    }
+                }
             } else {
                 Toast.makeText(this, "El producto no existe", Toast.LENGTH_SHORT).show();
             }
