@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
+            android:name=".ProductoActivity"
+            android:exported="false" />
+        <activity
             android:name=".APIRestActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductoActivity"
+            android:name=".CamaraActivity"
             android:exported="false" />
         <activity
             android:name=".ListViewActivity"
@@ -42,7 +45,7 @@
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".CamaraActivity"
+            android:name=".FacturaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
