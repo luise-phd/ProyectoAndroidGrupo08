@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_agregar"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Agregar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_Listar"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Listar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_eliminar"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/mnu_buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_editar"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Editar" />
+    <item
+        android:id="@+id/mnu_limpiar"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Limpiar" />
+</menu>

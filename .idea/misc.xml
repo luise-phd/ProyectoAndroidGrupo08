@@ -19,6 +19,7 @@
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/font/aclonica.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_camara.xml" value="0.22" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_categoria.xml" value="0.1503623188405797" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_categoria_firebase.xml" value="0.16802536231884058" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_encuesta.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_factura.xml" value="0.178125" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_list_view.xml" value="0.16" />
@@ -26,8 +27,10 @@
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_marca.xml" value="0.1503623188405797" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_producto.xml" value="0.25" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_producto_firebase.xml" value="0.1921875" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_splash_screen.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/input_dialog.xml" value="0.18" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/menu/menu_categoria_firebase.xml" value="0.22" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/menu/menu_imagenes.xml" value="0.1921875" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/menu/menu_main.xml" value="0.25" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/mipmap-anydpi-v26/ic_apple.xml" value="0.13425925925925927" />
