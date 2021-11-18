@@ -24,7 +24,7 @@ import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
 import android.util.Base64;
 
-public class CamaraActivity extends AppCompatActivity {
+public class ImagenesActivity extends AppCompatActivity {
     private EditText txtDescripcion;
     private ImageButton btnCamara;
     private ImageView imgView;
@@ -39,7 +39,7 @@ public class CamaraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_camara);
+        setContentView(R.layout.activity_imagenes);
 
         admin = new MyDBSQLiteHelper(this, vars.nomDB, null, vars.version);
 
@@ -62,12 +62,22 @@ public class CamaraActivity extends AppCompatActivity {
         }
     }
 
+    public void deGaleria(View view){
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        startActivityForResult(intent , 2);
+    }
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        //De la camara
         if (requestCode == 1 && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imgBitmap = (Bitmap) extras.get("data");
             imgView.setImageBitmap(imgBitmap);
+        }
+        //De la galería
+        if (requestCode == 2 && resultCode == RESULT_OK) {
+
         }
     }
 

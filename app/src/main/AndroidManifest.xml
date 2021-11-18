@@ -24,7 +24,7 @@
             android:name=".APIRestActivity"
             android:exported="false" />
         <activity
-            android:name=".CamaraActivity"
+            android:name=".ProductoFirebaseActivity"
             android:exported="false" />
         <activity
             android:name=".ListViewActivity"
@@ -51,7 +51,7 @@
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".ProductoFirebaseActivity"
+            android:name=".ImagenesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
