@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".ProductoFirebaseActivity">
 
@@ -30,5 +32,12 @@
         android:ems="10"
         android:hint="Precio"
         android:inputType="number" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testCrash"
+        android:text="Test crash" />
 
 </LinearLayout>

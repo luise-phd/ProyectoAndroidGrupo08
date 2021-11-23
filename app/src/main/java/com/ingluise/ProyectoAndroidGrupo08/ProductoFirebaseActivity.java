@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -32,6 +33,10 @@ public class ProductoFirebaseActivity extends AppCompatActivity {
         et1 = findViewById(R.id.input_ref);
         et2 = findViewById(R.id.input_producto);
         et3 = findViewById(R.id.input_precio);
+    }
+
+    public void testCrash(View view) {
+        throw new RuntimeException("Test Crash"); // Force a crash
     }
 
     @Override
