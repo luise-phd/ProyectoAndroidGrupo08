@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".ProductoFirebaseActivity"
             android:exported="false" />
         <activity
             android:name=".CategoriaFirebaseActivity"
@@ -54,7 +54,7 @@
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".ProductoFirebaseActivity"
+            android:name=".RecyclerViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

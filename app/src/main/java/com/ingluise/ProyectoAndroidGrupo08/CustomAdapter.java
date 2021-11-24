@@ -15,6 +15,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
     private String[] mDataSet;
 
+    public CustomAdapter(String[] dataSet) {
+        mDataSet = dataSet;
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext())
@@ -34,8 +38,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView tv;
-        private ImageView iv;
+        private final TextView tv;
+        private final ImageView iv;
 
         public ViewHolder(View view) {
             super(view);
@@ -47,7 +51,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             });
             tv = view.findViewById(R.id.textView17);
             iv = view.findViewById(R.id.imageView6);
-            iv.setImageResource(R.drawable.ic_producto);
+            iv.setImageResource(R.mipmap.ic_apple);
         }
 
         public TextView getTextView() {
