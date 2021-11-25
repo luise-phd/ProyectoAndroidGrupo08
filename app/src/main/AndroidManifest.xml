@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
-            android:name=".LocationActivity"
+            android:name=".RecyclerViewBasicActivity"
             android:exported="false" />
         <activity
             android:name=".RecyclerViewActivity"
@@ -61,7 +61,7 @@
             android:exported="false"
             android:label="@string/producto" />
         <activity
-            android:name=".RecyclerViewBasicActivity"
+            android:name=".LocationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

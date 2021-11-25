@@ -7,4 +7,7 @@
     <string name="saludo">Hello World!</string>
     <string name="saludo2">Bienvenido</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="latitude_label">Latitud</string>
+    <string name="longitude_label">Longitud</string>
+    <string name="activity_label">Actividad</string>
 </resources>
