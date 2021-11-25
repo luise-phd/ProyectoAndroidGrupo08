@@ -16,6 +16,7 @@
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/drawable-anydpi/ic_producto.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/drawable-anydpi/ic_user.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/drawable/ic_icons8_mac_os.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/drawable/ic_photo_camera.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/font/aclonica.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_camara.xml" value="0.22" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_categoria.xml" value="0.1503623188405797" />
@@ -24,12 +25,14 @@
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_factura.xml" value="0.178125" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_imagenes.xml" value="0.182518115942029" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_list_view.xml" value="0.16" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_location.xml" value="0.1921875" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_marca.xml" value="0.1503623188405797" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_producto.xml" value="0.25" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_producto_firebase.xml" value="0.1921875" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_recycler_view.xml" value="0.1921875" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_recycler_view_basic.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/activity_splash_screen.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/input_dialog.xml" value="0.18" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/ProyectoAndroidGrupo08/app/src/main/res/layout/recycler_view_frag.xml" value="0.22" />
