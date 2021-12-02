@@ -8,6 +8,39 @@
         android:title="@string/producto"
         app:showAsAction="always" />
     <item
+        android:id="@+id/mnu_categoria"
+        android:icon="@drawable/ic_categoria"
+        android:title="Categoría"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_factura"
+        android:icon="@drawable/ic_factura"
+        android:title="Factura"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_imagenes"
+        android:icon="@drawable/ic_imagenes"
+        android:title="Imágenes"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_ubicacion"
+        android:title="Ubicación" />
+    <item
+        android:id="@+id/mnu_producto_firebase"
+        android:title="Producto (Firebase)" />
+    <item
+        android:id="@+id/mnu_recyclerview"
+        android:title="RecyclerView" />
+    <item
+        android:id="@+id/mnu_recyclerview_basic"
+        android:title="RecyclerVIew Basic" />
+    <item
+        android:id="@+id/mnu_encuesta"
+        android:title="Encuesta" />
+    <item
+        android:id="@+id/mnu_api_rest"
+        android:title="API Rest" />
+    <item
         android:id="@+id/mnu_horizontal_scrollview"
         android:title="@string/horizontal_scrollview" />
     <item

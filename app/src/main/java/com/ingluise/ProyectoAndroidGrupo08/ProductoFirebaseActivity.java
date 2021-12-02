@@ -30,6 +30,8 @@ public class ProductoFirebaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_producto_firebase);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         et1 = findViewById(R.id.input_ref);
         et2 = findViewById(R.id.input_producto);
         et3 = findViewById(R.id.input_precio);
@@ -45,8 +47,16 @@ public class ProductoFirebaseActivity extends AppCompatActivity {
         return true;
     }
 
+    public void OnBackPressed() {
+        finish();
+    }
+
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
 
         if(id == R.id.mnu_agregar) {
             String ref = et1.getText().toString();

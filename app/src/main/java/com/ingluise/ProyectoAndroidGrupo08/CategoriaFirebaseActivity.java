@@ -28,6 +28,8 @@ public class CategoriaFirebaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categoria_firebase);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         et1 = findViewById(R.id.input_categoria);
         // Write a message to the database
 //        FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -42,8 +44,16 @@ public class CategoriaFirebaseActivity extends AppCompatActivity {
         return true;
     }
 
+    public void OnBackPressed() {
+        finish();
+    }
+
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
 
         if(id == R.id.mnu_agregar) {
             String des = et1.getText().toString();

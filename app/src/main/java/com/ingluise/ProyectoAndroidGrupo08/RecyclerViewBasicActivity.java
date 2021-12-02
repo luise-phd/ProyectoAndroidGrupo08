@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 public class RecyclerViewBasicActivity extends AppCompatActivity {
@@ -24,6 +25,8 @@ public class RecyclerViewBasicActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_basic);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         rv = findViewById(R.id.rv_list);
         mDataset = initDataset();
@@ -50,5 +53,18 @@ public class RecyclerViewBasicActivity extends AppCompatActivity {
 //        rv.setLayoutManager(llm);
         rv.setLayoutManager(glm);
         rv.scrollToPosition(scrollPosition);
+    }
+
+    public void OnBackPressed() {
+        finish();
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }

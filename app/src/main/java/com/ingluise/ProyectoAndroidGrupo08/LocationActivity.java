@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +50,8 @@ public class LocationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mLatitude = findViewById(R.id.tv_latitude);
         mLongitude = findViewById(R.id.tv_longitude);
@@ -243,5 +246,18 @@ public class LocationActivity extends AppCompatActivity
                 location.getLatitude(), location.getLongitude()), Toast.LENGTH_SHORT).show();
         mLastLocation = location;
         updateLocationUI();
+    }
+
+    public void OnBackPressed() {
+        finish();
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }

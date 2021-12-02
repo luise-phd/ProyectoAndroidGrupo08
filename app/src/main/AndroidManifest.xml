@@ -14,40 +14,51 @@
         android:theme="@style/Theme.HolaMundo">
         <activity
             android:name=".RecyclerViewBasicActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recycler_view_basic" />
         <activity
             android:name=".RecyclerViewActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recyclerview" />
         <activity
             android:name=".ProductoFirebaseActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/producto_firebase"/>
         <activity
             android:name=".CategoriaFirebaseActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/cat" />
         <activity
             android:name=".FacturaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/fact" />
         <activity
             android:name=".ProductoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/producto" />
         <activity
             android:name=".LocationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/ubic" />
         <activity
             android:name=".ImagenesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/imgs" />
         <activity
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
         <activity
             android:name=".EncuestaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/encuesta" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".APIRestActivity"
+            android:exported="false"
+            android:label="@string/api_rest" />
         <activity
             android:name=".ScrollViewActivity"
             android:exported="false"
@@ -58,10 +69,9 @@
             android:label="@string/horizontal_scrollview" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"
-            android:label="@string/producto" />
+            android:exported="false" />
         <activity
-            android:name=".APIRestActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

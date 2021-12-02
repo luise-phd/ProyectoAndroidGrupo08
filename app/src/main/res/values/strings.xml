@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">Proyecto Grupo 08</string>
-    <string name="horizontal_scrollview">HorizontalScrollView</string>
+    <string name="app_name">P/Grupo 08</string>
+    <string name="horizontal_scrollview">Horizontal ScrollView</string>
+    <string name="api_rest">API Rest</string>
+    <string name="cat">Categoria</string>
+    <string name="encuesta">Encuesta</string>
+    <string name="fact">Factura</string>
+    <string name="imgs">Imágenes</string>
+    <string name="ubic">Ubicación</string>
+    <string name="producto_firebase">Producto (Firebase)</string>
+    <string name="recyclerview">RecyclerView</string>
+    <string name="recycler_view_basic">RecyclerView Basic</string>
     <string name="previous">Previous</string>
     <string name="producto">Producto</string>
     <string name="scrollview">ScrollView</string>

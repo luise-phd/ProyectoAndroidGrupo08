@@ -8,6 +8,7 @@ import android.database.MatrixCursor;
 import android.database.MergeCursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -27,6 +28,8 @@ public class FacturaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factura);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         admin = new MyDBSQLiteHelper(this, vars.nomDB, null, vars.version);
 
@@ -61,5 +64,18 @@ public class FacturaActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void OnBackPressed() {
+        finish();
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }

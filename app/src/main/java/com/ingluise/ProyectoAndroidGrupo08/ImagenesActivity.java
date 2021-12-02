@@ -46,6 +46,8 @@ public class ImagenesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imagenes);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         admin = new MyDBSQLiteHelper(this, vars.nomDB, null, vars.version);
 
         txtDescripcion = findViewById(R.id.txtDescripcion);
@@ -101,8 +103,16 @@ public class ImagenesActivity extends AppCompatActivity {
         return true;
     }
 
+    public void OnBackPressed() {
+        finish();
+    }
+
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
+
+        if(id == android.R.id.home) {
+            OnBackPressed();
+        }
 
         if(id == R.id.mnu_guardar) {
             String des = txtDescripcion.getText().toString();

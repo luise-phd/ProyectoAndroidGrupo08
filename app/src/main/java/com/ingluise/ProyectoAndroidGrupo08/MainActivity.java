@@ -2,6 +2,7 @@ package com.ingluise.ProyectoAndroidGrupo08;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -53,6 +54,51 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id == R.id.mnu_scrollview) {
             Intent newIntent = new Intent(this, ScrollViewActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_api_rest) {
+            Intent newIntent = new Intent(this, APIRestActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_categoria) {
+            Intent newIntent = new Intent(this, CategoriaFirebaseActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_encuesta) {
+            Intent newIntent = new Intent(this, EncuestaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_factura) {
+            Intent newIntent = new Intent(this, FacturaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_imagenes) {
+            Intent newIntent = new Intent(this, ImagenesActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_ubicacion) {
+            Intent newIntent = new Intent(this, LocationActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_producto_firebase) {
+            Intent newIntent = new Intent(this, ProductoFirebaseActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_recyclerview) {
+            Intent newIntent = new Intent(this, RecyclerViewActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_recyclerview_basic) {
+            Intent newIntent = new Intent(this, RecyclerViewBasicActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
